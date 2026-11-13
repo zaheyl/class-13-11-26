@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METALLICA | Fashion & Footwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">METALLICA<span>.</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Us</a>
+        </nav>
+
+        <button class="cart-btn" onclick="openCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="slides">
+            <div class="slide active" style="background-image: url('images/IMAGE1.jpg')"></div>
+            <div class="slide" style="background-image: url('images/IMAGE2.png')"></div>
+            <div class="slide" style="background-image: url('images/IMAGE3.jpg')"></div>
+        </div>
+
+        <div class="hero-content">
+            <p>THE STREETWEAR OF THE LEGENDS</p>
+            <h1>WEAR YOUR<br><span>ATTITUDE.</span></h1>
+            <a href="#products" class="hero-btn">EXPLORE COLLECTION</a>
+        </div>
+    </section>
+
+    <!-- SLOGAN -->
+    <section class="slogan">
+        <p>BUILT DIFFERENT. WORN DIFFERENT.</p>
+        <h2>NOT JUST FASHION. <span>IT'S A STATEMENT.</span></h2>
+    </section>
+
+    <!-- AUTO MOVING CAROUSEL -->
+    <section class="brand-carousel">
+        <div class="carousel-track">
+            <span>METALLICA</span>
+            <span>STREET CULTURE</span>
+            <span>NO LIMITS</span>
+            <span>BE BOLD</span>
+            <span>METALLICA</span>
+            <span>STREET CULTURE</span>
+            <span>NO LIMITS</span>
+            <span>BE BOLD</span>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <main id="products">
+
+        <!-- CLOTHING -->
+        <section class="product-section">
+            <div class="section-heading">
+                <p>OUR COLLECTION</p>
+                <h2>CLOTHING <span>01</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="product-grid clothes-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/IMAGE1.jpg" alt="Black T-shirt">
+                        <span class="product-tag">NEW</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oversized Black Tee</h3>
+                        <p>RM 89.00</p>
+                        <button onclick="addToCart('Oversized Black Tee', 89)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/IMAGE2.png" alt="Red T-shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Graphic Tee</h3>
+                        <p>RM 79.00</p>
+                        <button onclick="addToCart('Red Graphic Tee', 79)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/IMAGE3.jpg" alt="Black Hoodie">
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Black Hoodie</h3>
+                        <p>RM 149.00</p>
+                        <button onclick="addToCart('Classic Black Hoodie', 149)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth4.jpg" alt="Grey Sweatshirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Grey Street Sweatshirt</h3>
+                        <p>RM 119.00</p>
+                        <button onclick="addToCart('Grey Street Sweatshirt', 119)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth5.jpg" alt="Cargo Pants">
+                    </div>
+                    <div class="product-info">
+                        <h3>Urban Cargo Pants</h3>
+                        <p>RM 129.00</p>
+                        <button onclick="addToCart('Urban Cargo Pants', 129)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth6.jpg" alt="Black Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h3>Dark Mode Jacket</h3>
+                        <p>RM 189.00</p>
+                        <button onclick="addToCart('Dark Mode Jacket', 189)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth7.jpg" alt="Graphic Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Metal Graphic Shirt</h3>
+                        <p>RM 99.00</p>
+                        <button onclick="addToCart('Metal Graphic Shirt', 99)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cloth8.jpg" alt="Red Hoodie">
+                    </div>
+                    <div class="product-info">
+                        <h3>Crimson Red Hoodie</h3>
+                        <p>RM 159.00</p>
+                        <button onclick="addToCart('Crimson Red Hoodie', 159)">ADD TO CART</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SHOES -->
+        <section class="product-section shoes-section">
+            <div class="section-heading">
+                <p>STEP INTO STYLE</p>
+                <h2>FOOTWEAR <span>02</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="product-grid shoes-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/shoe1.jpg" alt="Black sneakers">
+                        <span class="product-tag">POPULAR</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blackout Sneakers</h3>
+                        <p>RM 199.00</p>
+                        <button onclick="addToCart('Blackout Sneakers', 199)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/shoe2.jpg" alt="Red sneakers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Crimson Street Shoes</h3>
+                        <p>RM 229.00</p>
+                        <button onclick="addToCart('Crimson Street Shoes', 229)">ADD TO CART</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="feature">
+            <h3>01 / QUALITY</h3>
+            <p>Premium materials. Quality you can feel.</p>
+        </div>
+
+        <div class="feature">
+            <h3>02 / STYLE</h3>
+            <p>Unique designs made for your identity.</p>
+        </div>
+
+        <div class="feature">
+            <h3>03 / DELIVERY</h3>
+            <p>Order easily through WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <p>WHO WE ARE</p>
+            <h2>MORE THAN<br><span>JUST A BRAND.</span></h2>
+            <p>
+                METALLICA is a clothing and footwear brand built for people
+                who express themselves through fashion. We believe in bold
+                styles, individuality and confidence.
+            </p>
+            <p>
+                From everyday essentials to standout streetwear,
+                we bring you fashion that represents who you are.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <p>HAVE A QUESTION?</p>
+        <h2>LET'S TALK.</h2>
+        <p>Contact us for orders, enquiries and product information.</p>
+        <a href="https://wa.me/60132582804" target="_blank">
+            CHAT WITH US ON WHATSAPP
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>METALLICA<span>.</span></h2>
+                <p>WEAR YOUR ATTITUDE.</p>
+            </div>
+
+            <div>
+                <h3>QUICK LINKS</h3>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div>
+                <h3>CONTACT</h3>
+                <p>WhatsApp: 013-258 2804</p>
+                <p>Malaysia</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2026 METALLICA. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <!-- CART POPUP -->
+    <div class="cart-overlay" id="cart-overlay" onclick="closeCart(event)">
+        <div class="cart-popup" onclick="event.stopPropagation()">
+            <div class="cart-header">
+                <h2>YOUR CART</h2>
+                <button class="close-btn" onclick="closeCart()">×</button>
+            </div>
+
+            <div id="cart-items">
+                <p class="empty-cart">Your cart is currently empty.</p>
+            </div>
+
+            <div class="cart-bottom">
+                <h3>Total: RM <span id="cart-total">0.00</span></h3>
+                <button class="checkout-btn" onclick="checkout()">
+                    ORDER VIA WHATSAPP
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
